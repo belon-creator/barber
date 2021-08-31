@@ -7,224 +7,257 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Allison&family=Montserrat:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Allison&family=Dancing+Script&family=Great+Vibes&family=Marck+Script&family=Montserrat:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Saloon</title>
   </head>
   <body>
-    <header>
-      <a href="/">
-        <img src="./img/icons/logo_ant.svg" alt="logo" width="80" />
-      </a>
-      <nav>
-        <ul>
-          <li>
-            <a href="#">Партнёры</a>
-          </li>
-          <li>
-            <a href="#">Услуги</a>
-          </li>
-          <li>
-            <a href="#">Мастера</a>
-          </li>
-          <li>
-            <a href="#">Отзывы</a>
-          </li>
-          <li>
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
+    <header class="hdr">
+      <div class="container">
+        <a href="/" class="link">
+          <img src="./img/icons/logo_ant.svg" alt="logo" width="80" />
+        </a>
+        <button class="burger">
+          <img src="./img/icons/Group 6.svg" alt="" />
+        </button>
+        <nav>
+          <ul class="navbar-nav list">
+            <li>
+              <a class="link hdr-link" href="#">Партнёры</a>
+            </li>
+            <li>
+              <a class="link hdr-link" href="#">Услуги</a>
+            </li>
+            <li>
+              <a class="link hdr-link" href="#">Мастера</a>
+            </li>
+            <li>
+              <a class="link hdr-link" href="#">Отзывы</a>
+            </li>
+            <li>
+              <a class="link hdr-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <div class="banner">
-      <h1>Парикмахерская</h1>
-      <p>Создадим образ, который идеально подчеркнет ваш характер.</p>
+      <h1 class="main-title">Парикмахерская</h1>
+      <p class="txt">
+        Создадим образ, который идеально подчеркнет ваш характер.
+      </p>
       <img src="./img/Клякса слева.png" alt="" width="130" />
       <img src="./img/Клякса справа.png" alt="" width="220" />
       <img src="./img/кристалл.png" alt="" width="540" />
     </div>
 
-    <section>
-      <ul>
-        <li>
-          <p>Многолетний опыт</p>
-        </li>
-        <li>
-          <p>Запись ведётся в любое удобное для вас время</p>
-        </li>
-        <li>
-          <p>Удобное расположение в городе</p>
-        </li>
-        <li>
-          <p>Низкие цены</p>
-        </li>
-        <li>
-          <p>Качество</p>
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Безопасность</h2>
-      <p>
-        В связи с угрозой распространения вирусной инфекции COVID-19, в
-        Парикмахерской приняты дополнительные меры: <br />
-        - Весь персонал работает в масках. <br />
-        - В течение дня регулярно проводится обработка помещений и рабочих
-        поверхностей дезинфицирующими средствами. <br />
-        - Все инструменты обрабатываются антисептиками и стерилизуются в
-        медицинских автоклавах. <br />
-        В свободном доступе в салонах находятся медицинские маски и
-        дезинфицирующие растворы для наших гостей. <br />
-        Специалисты с признаками ОРВИ или прибывшие из стран с неблагоприятной
-        вирусной обстановкой, к работе не допускаются!
-      </p>
-      <img src="./img/Mask Group.png" alt="" width="478" />
-    </section>
-
-    <section>
-      <h2>Наши партнеры</h2>
-      <img src="./img/logoProf.png" alt="" width="243" /><img
-        src="./img/iEKGtvwM944 1.png"
-        alt=""
-        width="302"
-      />
-    </section>
-    <section>
-      <h2>Услуги и цены</h2>
-      <ul>
-        <li>
-          <h3>Парикмахерские услуги</h3>
-        </li>
-        <li>
-          <p>Мужской зал</p>
-        </li>
-        <li>
-          <p>Женский зал</p>
-        </li>
-        <li>
-          <p>Ногтевой сервис</p>
-        </li>
-        <li>
-          <p>Брови и ресницы</p>
-        </li>
-      </ul>
-
-      <table>
-        <tr>
-          <td>Стрижка усов</td>
-          <td>100 uah</td>
-        </tr>
-        <tr>
-          <td>Бокс</td>
-          <td>250 uah</td>
-        </tr>
-        <tr>
-          <td>Стрижка бороды</td>
-          <td>150 uah</td>
-        </tr>
-        <tr>
-          <td>Полубокс</td>
-          <td>400 uah</td>
-        </tr>
-        <tr>
-          <td>Стрижка под насадку</td>
-          <td>250 uah</td>
-        </tr>
-        <tr>
-          <td>Стрижка наголо</td>
-          <td>200 uah</td>
-        </tr>
-        <tr>
-          <td>Школьная стрижка</td>
-          <td>400 uah</td>
-        </tr>
-        <tr>
-          <td>Модельная стрижка</td>
-          <td>550 uah</td>
-        </tr>
-        <tr>
-          <td>Дошкольная стрижка</td>
-          <td>350 uah</td>
-        </tr>
-        <tr>
-          <td>Модельная стрижка “Площадка”</td>
-          <td>650 uah</td>
-        </tr>
-      </table>
-
-      <img src="./img/129370-800w.png" alt="" width="400" />
-      <p>*Услуги присутствуют в парикмахерской, но на сайте не раскрыты</p>
-    </section>
-
-    <section>
-      <h2>Мастера</h2>
-      <img src="./img/вариант 1.png" alt="" />
-      <div class="barber">
-        <h3>Ольга</h3>
-        <p>Мужской мастер по стрижке</p>
-        <p>Более 15-ти лет стажа</p>
-        <a href="tel:+380639480163">Нажмите сюда для звонка</a>
+    <section class="testimonials">
+      <div class="container">
+        <ul class="list testimonials-list">
+          <li class="testimonials-list__item">
+            <img src="./img/icons/икона женщины.svg" alt="" />
+            <p class="testimonials-list__txt">Многолетний опыт</p>
+          </li>
+          <li class="testimonials-list__item">
+            <img src="./img/icons/икона часов.svg" alt="" />
+            <p class="testimonials-list__txt">
+              Запись ведётся в любое удобное для вас время
+            </p>
+          </li>
+          <li class="testimonials-list__item">
+            <img src="./img/icons/икона местоположения.svg" alt="" />
+            <p class="testimonials-list__txt">Удобное расположение в городе</p>
+          </li>
+          <li class="testimonials-list__item">
+            <img src="./img/icons/икона денег.svg" alt="" />
+            <p class="testimonials-list__txt">Низкие цены</p>
+          </li>
+          <li class="testimonials-list__item">
+            <img src="./img/icons/икона красок.svg" alt="" />
+            <p class="testimonials-list__txt">Качество</p>
+          </li>
+        </ul>
       </div>
-      <p>*Данные остальных мастеров на сайте не раскрыты</p>
-
-      <div class="rewiew">
-        <h3>Отзыв</h3>
-        <p>Спасибо Вам за обратную связь.</p>
-      </div>
-
-      <form>
-        <label>
-          <span>Введите имя</span>
-          <input type="text" name="name" />
-        </label>
-        <label>
-          <span>Комментарий</span>
-          <input type="text" name="name" />
-        </label>
-        <button type="submit">Добавить</button>
-      </form>
     </section>
 
-    <section>
-      <img src="./img/map.jpg" alt="" />
-      <div class="address-form">
-        <img src="./img/logoProf.png" alt="" width="82" />
-        <address>
-          г. Киев <br />
-          Петропавловская борщаговка
-        </address>
-        <p>
-          Пн - Пт: 09:00 — 19:00 <br />
-          Сб - Вс: 11:00 — 16:00
+    <section class="safety">
+      <div class="container">
+        <h2 class="title">Безопасность</h2>
+        <p class="txt">
+          В связи с угрозой распространения вирусной инфекции COVID-19, в
+          Парикмахерской приняты дополнительные меры: <br />
+          - Весь персонал работает в масках. <br />
+          - В течение дня регулярно проводится обработка помещений и рабочих
+          поверхностей дезинфицирующими средствами. <br />
+          - Все инструменты обрабатываются антисептиками и стерилизуются в
+          медицинских автоклавах. <br />
+          В свободном доступе в салонах находятся медицинские маски и
+          дезинфицирующие растворы для наших гостей. <br />
+          Специалисты с признаками ОРВИ или прибывшие из стран с неблагоприятной
+          вирусной обстановкой, к работе не допускаются!
         </p>
-        <p>Связаться с мастером можно по личному телефону</p>
+        <img src="./img/Mask Group.png" alt="" width="478" />
+      </div>
+    </section>
+
+    <section class="partners">
+      <div class="container">
+        <h2>Наши партнеры</h2>
+        <img src="./img/logoProf.png" alt="" width="243" /><img
+          src="./img/iEKGtvwM944 1.png"
+          alt=""
+          width="302"
+        />
+      </div>
+    </section>
+
+    <section class="pricing">
+      <div class="container">
+        <h2 class="title">Услуги и цены</h2>
+        <ul class="list pricing-list">
+          <li class="pricing-list__item">
+            <h3 class="pricing-list__txt txt">Парикмахерские услуги</h3>
+          </li>
+          <li class="pricing-list__item">
+            <p class="pricing-list__txt txt">Мужской зал</p>
+          </li>
+          <li class="pricing-list__item">
+            <p class="pricing-list__txt txt">Женский зал</p>
+          </li>
+          <li class="pricing-list__item">
+            <p class="pricing-list__txt txt">Ногтевой сервис</p>
+          </li>
+          <li class="pricing-list__item">
+            <p class="pricing-list__txt txt">Брови и ресницы</p>
+          </li>
+        </ul>
+
+        <table class="table-price">
+          <tr>
+            <td class="txt">Стрижка усов</td>
+            <td class="txt">100 uah</td>
+          </tr>
+          <tr>
+            <td class="txt">Бокс</td>
+            <td class="txt">250 uah</td>
+          </tr>
+          <tr>
+            <td class="txt">Стрижка бороды</td>
+            <td class="txt">150 uah</td>
+          </tr>
+          <tr>
+            <td class="txt">Полубокс</td>
+            <td class="txt">400 uah</td>
+          </tr>
+          <tr>
+            <td class="txt">Стрижка под насадку</td>
+            <td class="txt">250 uah</td>
+          </tr>
+          <tr>
+            <td class="txt">Стрижка наголо</td>
+            <td class="txt">200 uah</td>
+          </tr>
+          <tr>
+            <td class="txt">Школьная стрижка</td>
+            <td class="txt">400 uah</td>
+          </tr>
+          <tr>
+            <td class="txt">Модельная стрижка</td>
+            <td class="txt">550 uah</td>
+          </tr>
+          <tr>
+            <td class="txt">Дошкольная стрижка</td>
+            <td class="txt">350 uah</td>
+          </tr>
+          <tr>
+            <td class="txt">Модельная стрижка “Площадка”</td>
+            <td class="txt">650 uah</td>
+          </tr>
+        </table>
+
+        <img src="./img/129370-800w.png" alt="" width="400" />
+        <p class="txt">
+          *Услуги присутствуют в парикмахерской, но на сайте не раскрыты
+        </p>
+      </div>
+    </section>
+
+    <section class="barbers">
+      <div class="container">
+        <h2 class="title">Мастера</h2>
+        <img src="./img/вариант 1.png" alt="" />
+        <div class="barber">
+          <h3 class="txt">Ольга</h3>
+          <p class="txt">Мужской мастер по стрижке</p>
+          <p class="txt">Более 15-ти лет стажа</p>
+          <a href="tel:+380639480163" class="link txt phone"
+            >Нажмите сюда для звонка</a
+          >
+        </div>
+        <p class="txt">*Данные остальных мастеров на сайте не раскрыты</p>
+
+        <div class="rewiew">
+          <h3 class="title">Отзыв</h3>
+          <p class="txt">Спасибо Вам за обратную связь.</p>
+        </div>
+
+        <form>
+          <label>
+            <span>Введите имя</span>
+            <input type="text" name="name" />
+          </label>
+          <label>
+            <span>Комментарий</span>
+            <input type="text" name="name" />
+          </label>
+          <button type="submit">Добавить</button>
+        </form>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <img src="./img/map.jpg" alt="" />
+        <div class="address-form">
+          <img src="./img/logoProf.png" alt="" width="82" />
+          <address class="txt">
+            г. Киев <br />
+            Петропавловская борщаговка
+          </address>
+          <p class="txt">
+            Пн - Пт: 09:00 — 19:00 <br />
+            Сб - Вс: 11:00 — 16:00
+          </p>
+          <p class="txt">Связаться с мастером можно по личному телефону</p>
+        </div>
       </div>
     </section>
 
     <footer>
-      <a href="/">
+      <a href="/" class="link">
         <img src="./img/icons/logo_ant.svg" alt="logo" width="80" />
       </a>
+
       <nav>
-        <ul>
+        <ul class="navbar-nav list">
           <li>
-            <a href="#">Партнёры</a>
+            <a class="link hdr-link" href="#">Партнёры</a>
           </li>
           <li>
-            <a href="#">Услуги</a>
+            <a class="link hdr-link" href="#">Услуги</a>
           </li>
           <li>
-            <a href="#">Мастера</a>
+            <a class="link hdr-link" href="#">Мастера</a>
           </li>
           <li>
-            <a href="#">Отзывы</a>
+            <a class="link hdr-link" href="#">Отзывы</a>
           </li>
           <li>
-            <a href="#">Контакты</a>
+            <a class="link hdr-link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>

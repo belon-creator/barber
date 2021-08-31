@@ -1,0 +1,136 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+:root {
+  --text-color: #2e2d2d;
+  --title-font: 'Marck Script', cursive;
+  --font: 'Montserrat', sans-serif;
+  --accent-color: #e04504;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  color: var(--text-color);
+}
+
+.link {
+  display: block;
+  text-decoration: none;
+  display: flex;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.main-title {
+  font-family: var(--title-font);
+  font-weight: 500;
+}
+
+.hdr-link {
+  color: var(--text-color);
+  font-family: var(--font);
+}
+
+.hdr-link:hover,
+.hdr-link:focus {
+  color: var(--accent-color);
+}
+
+.txt {
+  font-family: var(--font);
+  color: var(--text-color);
+}
+
+.title {
+  font-family: var(--title-font);
+  color: var(--accent-color);
+}
+
+/* 
+================================================
+*/
+
+.hdr .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 680px) {
+  .container {
+    padding: 18px;
+  }
+
+  .main-title {
+    font-size: 42px;
+    line-height: 61px;
+  }
+  .title {
+    font-size: 26px;
+    line-height: 38px;
+  }
+
+  .txt {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  /* 
+=========================================================
+HEADER
+=========================================================
+*/
+  .navbar-nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 681px) and (max-width: 1680px) {
+  .container {
+    padding: 80px;
+  }
+
+  .main-title {
+    font-size: 100px;
+    line-height: 145px;
+  }
+
+  .title {
+    font-size: 72px;
+    line-height: 104px;
+  }
+
+  .txt {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  /* 
+=========================================================
+HEADER
+=========================================================
+*/
+
+  .burger {
+    display: none;
+  }
+}
