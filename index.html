@@ -17,14 +17,12 @@
   <body>
     <header class="hdr">
       <div class="container">
-        <a href="/" class="link">
-          <img src="./img/icons/logo_ant.svg" alt="logo" width="80" />
+        <a href="/" class="link logo">
+          <img src="./img/icons/scissors.svg" alt="logo" width="80" />
         </a>
-        <button class="burger">
-          <img src="./img/icons/Group 6.svg" alt="" />
-        </button>
-        <nav>
-          <ul class="navbar-nav list">
+
+        <nav class="navigation">
+          <ul class="navbar-nav list" id="menu">
             <li>
               <a class="link hdr-link" href="#">Партнёры</a>
             </li>
@@ -42,6 +40,10 @@
             </li>
           </ul>
         </nav>
+
+        <button class="burger" id="burger-btn">
+          <img src="./img/icons/Group 6.svg" alt="" />
+        </button>
       </div>
     </header>
 
@@ -50,9 +52,14 @@
       <p class="txt">
         Создадим образ, который идеально подчеркнет ваш характер.
       </p>
-      <img src="./img/Клякса слева.png" alt="" width="130" />
-      <img src="./img/Клякса справа.png" alt="" width="220" />
-      <img src="./img/кристалл.png" alt="" width="540" />
+      <img class="left-blot" src="./img/Клякса слева.png" alt="" width="130" />
+      <img
+        class="right-blot"
+        src="./img/Клякса справа.png"
+        alt=""
+        width="220"
+      />
+      <img class="crystal" src="./img/кристалл.png" alt="" width="540" />
     </div>
 
     <section class="testimonials">
@@ -100,14 +107,16 @@
           Специалисты с признаками ОРВИ или прибывшие из стран с неблагоприятной
           вирусной обстановкой, к работе не допускаются!
         </p>
-        <img src="./img/Mask Group.png" alt="" width="478" />
+        <img class="masks" src="./img/Mask Group.png" alt="" width="478" />
       </div>
     </section>
 
     <section class="partners">
       <div class="container">
         <h2>Наши партнеры</h2>
-        <img src="./img/logoProf.png" alt="" width="243" /><img
+        <img class="partner-img" src="./img/logoProf.png" alt="" width="243" />
+        <img
+          class="partner-img"
           src="./img/iEKGtvwM944 1.png"
           alt=""
           width="302"
@@ -179,7 +188,12 @@
           </tr>
         </table>
 
-        <img src="./img/129370-800w.png" alt="" width="400" />
+        <img
+          class="content-img"
+          src="./img/129370-800w.png"
+          alt=""
+          width="400"
+        />
         <p class="txt">
           *Услуги присутствуют в парикмахерской, но на сайте не раскрыты
         </p>
@@ -189,7 +203,7 @@
     <section class="barbers">
       <div class="container">
         <h2 class="title">Мастера</h2>
-        <img src="./img/вариант 1.png" alt="" />
+        <img class="content-img" src="./img/вариант 1.png" alt="" />
         <div class="barber">
           <h3 class="txt">Ольга</h3>
           <p class="txt">Мужской мастер по стрижке</p>
@@ -221,7 +235,7 @@
 
     <section>
       <div class="container">
-        <img src="./img/map.jpg" alt="" />
+        <img class="map" src="./img/map.jpg" alt="" />
         <div class="address-form">
           <img src="./img/logoProf.png" alt="" width="82" />
           <address class="txt">
@@ -239,7 +253,7 @@
 
     <footer>
       <a href="/" class="link">
-        <img src="./img/icons/logo_ant.svg" alt="logo" width="80" />
+        <img src="./img/icons/scissors.svg" alt="logo" width="80" />
       </a>
 
       <nav>
@@ -262,5 +276,6 @@
         </ul>
       </nav>
     </footer>
+    <script src="./js/burger.js"></script>
   </body>
 </html>
