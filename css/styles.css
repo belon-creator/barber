@@ -79,6 +79,46 @@ p {
   align-items: center;
 }
 
+.banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.main-title {
+  position: absolute;
+  z-index: 1;
+}
+
+.right-blot,
+.banner-txt,
+.left-blot,
+.crystal {
+  position: absolute;
+}
+
+.testimonials-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.testimonials-list__item {
+  background-color: var(--accent-color);
+  text-align: center;
+}
+
+.testimonials-list__txt {
+  color: #fff;
+}
+/* 
+=========================================================
+ADAPTIVE
+=========================================================
+*/
+
 @media screen and (max-width: 680px) {
   .container {
     padding-right: 8px;
@@ -117,16 +157,27 @@ HEADER
 
   .navbar-nav {
     display: none;
-  }
-
-  .navbar-nav--is-active {
-    position: relative;
-    z-index: 1;
-    display: block;
-    width: 100vw;
+    width: 100%;
     height: 220px;
     color: #fff;
     background-color: var(--accent-color);
+    position: absolute;
+    z-index: 2;
+    margin-top: 30px;
+    padding-top: 20px;
+  }
+
+  .hdr-link {
+    padding: 8px;
+    margin-left: 20px;
+  }
+
+  .hdr-link:hover {
+    color: #fff;
+  }
+
+  .navbar-nav--is-active {
+    display: block;
   }
 
   .burger {
@@ -134,8 +185,34 @@ HEADER
     padding: 4px;
   }
 
+  /* 
+=========================================================
+BANNER
+=========================================================
+*/
+
+  .banner {
+    background: linear-gradient(
+      180deg,
+      rgba(224, 69, 4, 0.6) 0%,
+      rgba(224, 69, 4, 0) 100%
+    );
+  }
+
+  .right-blot {
+    top: 0;
+    right: 0;
+  }
+
+  .banner-txt {
+    display: none;
+  }
   /*  */
   .crystal {
+    display: none;
+  }
+
+  .left-blot {
     display: none;
   }
 
@@ -149,6 +226,22 @@ HEADER
 
   .partner-img {
     width: 100px;
+  }
+
+  /* 
+=========================================================
+TESTIMONIALS
+=========================================================
+*/
+
+  .testimonials-list__item {
+    max-width: 150px;
+    margin-bottom: 12px;
+    padding: 8px;
+  }
+
+  .testimonials-list__item:not(:last-child) {
+    margin-right: 12px;
   }
 }
 
@@ -196,4 +289,37 @@ HEADER
   .navbar-nav {
     display: flex;
   }
+
+  /* 
+=========================================================
+BANNER
+=========================================================
+*/
+
+  .left-blot {
+    left: 20px;
+    width: 250px;
+  }
+
+  .right-blot {
+    width: 428px;
+  }
+
+  .crystal {
+    right: 0;
+  }
+
+  .banner-txt {
+    bottom: 25%;
+    left: 130px;
+  }
+  .main-title {
+    left: 130px;
+  }
+
+  /* 
+=========================================================
+TESTIMONIALS
+=========================================================
+*/
 }
