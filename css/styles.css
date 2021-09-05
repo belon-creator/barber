@@ -67,7 +67,7 @@ p {
 }
 
 .map {
-  max-width: 100vw;
+  width: 100%;
 }
 /* 
 ================================================
@@ -139,6 +139,53 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+tr {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--text-color);
+}
+
+.barber-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rewiew {
+  display: flex;
+}
+
+.form,
+label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  border: 1px solid var(--accent-color);
+}
+
+label {
+  margin-bottom: 36px;
+}
+
+input {
+  all: unset;
+  border-bottom: 1px solid var(--text-color);
+}
+
+.btn {
+  all: unset;
+  width: 160px;
+  height: 40px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: var(--accent-color);
+  text-align: center;
 }
 /* 
 =========================================================
@@ -265,15 +312,15 @@ BANNER
 TESTIMONIALS
 =========================================================
 */
+  .container .testimonials-list__item {
+    margin-right: auto;
+    margin-left: auto;
+  }
 
   .testimonials-list__item {
     max-width: 150px;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     padding: 8px;
-  }
-
-  .testimonials-list__item:not(:last-child) {
-    margin-right: 12px;
   }
 
   .testimonials-list__item img {
@@ -287,6 +334,19 @@ partners
 */
   .partner-img {
     margin-right: 20px;
+  }
+
+  /* 
+=========================================================
+safety
+=========================================================
+*/
+
+  .masks {
+    display: block;
+    margin-top: 12px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   /* 
@@ -320,12 +380,47 @@ pricing
   }
 
   tr {
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 12px;
-    border-bottom: 1px solid var(--text-color);
+  }
+
+  /* 
+=========================================================
+barbers
+=========================================================
+*/
+  .barber-wrap img {
+    margin-right: 8px;
+  }
+
+  .barber-wrap {
+    margin-bottom: 8px;
+  }
+
+  .barbers-title {
+    margin-bottom: 16px;
+  }
+  .barbers-txt {
+    margin-bottom: 8px;
+  }
+
+  .rewiew {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form {
+    width: 290px;
+    padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 16px;
   }
 }
+
+/* 
+
+*/
 
 @media screen and (min-width: 681px) {
   .container {
@@ -345,6 +440,11 @@ pricing
   .txt {
     font-size: 18px;
     line-height: 21px;
+  }
+
+  section {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   /* 
@@ -380,11 +480,11 @@ BANNER
 
   .left-blot {
     left: 20px;
-    width: 250px;
+    width: 220px;
   }
 
   .right-blot {
-    width: 428px;
+    width: 420px;
   }
 
   .crystal {
@@ -408,6 +508,7 @@ TESTIMONIALS
   .testimonials-list__item {
     width: 180px;
     height: 200px;
+    margin-bottom: 14px;
   }
 
   .testimonials-list__item:not(:last-child) {
@@ -452,4 +553,65 @@ partners
 pricing
 =========================================================
 */
+  .pricing-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .pricing-list {
+    margin-right: 20px;
+  }
+
+  .pricing-list__txt {
+    margin-bottom: 20px;
+  }
+
+  .pricing-menu-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  tr {
+    margin-bottom: 24px;
+  }
+
+  /* 
+=========================================================
+barbers
+=========================================================
+*/
+  .barber-wrap img {
+    margin-right: 16px;
+  }
+
+  .barber-wrap {
+    margin-bottom: 16px;
+  }
+
+  .barbers-title {
+    margin-bottom: 24px;
+  }
+
+  .barbers-txt {
+    margin-bottom: 16px;
+  }
+
+  .rewiew {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .rewiew-wrap {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .form {
+    width: 480px;
+    padding: 40px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }

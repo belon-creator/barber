@@ -218,33 +218,37 @@
     <section class="barbers">
       <div class="container">
         <h2 class="title">Мастера</h2>
-        <img class="content-img" src="./img/вариант 1.png" alt="" />
-        <div class="barber">
-          <h3 class="txt">Ольга</h3>
-          <p class="txt">Мужской мастер по стрижке</p>
-          <p class="txt">Более 15-ти лет стажа</p>
-          <a href="tel:+380639480163" class="link txt phone"
-            >Нажмите сюда для звонка</a
-          >
+        <div class="barber-wrap">
+          <img class="content-img" src="./img/вариант 1.png" alt="" />
+          <div class="barber">
+            <h3 class="barbers-title txt">Ольга</h3>
+            <p class="barbers-txt txt">Мужской мастер по стрижке</p>
+            <p class="barbers-txt txt">Более 15-ти лет стажа</p>
+            <a href="tel:+380639480163" class="barbers-txt link txt phone"
+              >Нажмите сюда для звонка</a
+            >
+          </div>
         </div>
         <p class="txt">*Данные остальных мастеров на сайте не раскрыты</p>
 
-        <div class="rewiew">
-          <h3 class="title">Отзыв</h3>
-          <p class="txt">Спасибо Вам за обратную связь.</p>
-        </div>
+        <div class="rewiew-wrap">
+          <div class="rewiew">
+            <h3 class="title">Отзыв</h3>
+            <p class="txt">Спасибо Вам за обратную связь.</p>
+          </div>
 
-        <form>
-          <label>
-            <span>Введите имя</span>
-            <input type="text" name="name" />
-          </label>
-          <label>
-            <span>Комментарий</span>
-            <input type="text" name="name" />
-          </label>
-          <button type="submit">Добавить</button>
-        </form>
+          <form class="form">
+            <label>
+              <span>Введите имя</span>
+              <input type="text" name="name" />
+            </label>
+            <label>
+              <span>Комментарий</span>
+              <input type="text" name="name" />
+            </label>
+            <button class="btn" type="submit">Добавить</button>
+          </form>
+        </div>
       </div>
     </section>
 
@@ -252,7 +256,6 @@
       <div class="container">
         <img class="map" src="./img/map.jpg" alt="" />
         <div class="address-form">
-          <img src="./img/logoProf.png" alt="" width="82" />
           <address class="txt">
             г. Киев <br />
             Петропавловская борщаговка
