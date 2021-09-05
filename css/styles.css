@@ -100,6 +100,12 @@ p {
   position: absolute;
 }
 
+.testimonials .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .testimonials-list {
   display: flex;
   flex-wrap: wrap;
@@ -108,10 +114,31 @@ p {
 .testimonials-list__item {
   background-color: var(--accent-color);
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
 }
 
 .testimonials-list__txt {
   color: #fff;
+}
+
+.partner-img {
+  width: 300px;
+}
+
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /* 
 =========================================================
@@ -138,6 +165,11 @@ ADAPTIVE
   .txt {
     font-size: 14px;
     line-height: 16px;
+  }
+
+  section {
+    padding-bottom: 30px;
+    padding-top: 30px;
   }
 
   /* 
@@ -243,6 +275,56 @@ TESTIMONIALS
   .testimonials-list__item:not(:last-child) {
     margin-right: 12px;
   }
+
+  .testimonials-list__item img {
+    margin-bottom: 8px;
+  }
+
+  /* 
+=========================================================
+partners
+=========================================================
+*/
+  .partner-img {
+    margin-right: 20px;
+  }
+
+  /* 
+=========================================================
+pricing
+=========================================================
+*/
+
+  .pricing-wrap {
+    flex-direction: column;
+  }
+
+  .pricing-list {
+    margin-right: 20px;
+  }
+
+  .pricing-list__txt {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .pricing-menu-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .table-price {
+    width: 300px;
+  }
+
+  tr {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    border-bottom: 1px solid var(--text-color);
+  }
 }
 
 @media screen and (min-width: 681px) {
@@ -320,6 +402,54 @@ BANNER
   /* 
 =========================================================
 TESTIMONIALS
+=========================================================
+*/
+
+  .testimonials-list__item {
+    width: 180px;
+    height: 200px;
+  }
+
+  .testimonials-list__item:not(:last-child) {
+    margin-right: 14px;
+  }
+
+  .testimonials-list__item img {
+    margin-right: 10px;
+  }
+
+  /* 
+=========================================================
+SAFETY
+=========================================================
+*/
+
+  .safety {
+    padding-top: 60px;
+  }
+
+  .safety-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  /* 
+=========================================================
+partners
+=========================================================
+*/
+  .partners {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .partner-img {
+    margin-right: 40px;
+  }
+
+  /* 
+=========================================================
+pricing
 =========================================================
 */
 }
